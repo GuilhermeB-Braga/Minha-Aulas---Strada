@@ -45,8 +45,10 @@ listaAulas.forEach((aula, key) => {
         localStorage.setItem("aulasStatus", JSON.stringify(aulasStatus))
         progress()
 
+        clickEffect()
         
     })
+
 
 })
 
@@ -78,6 +80,10 @@ function congratulations(){
         confetes.classList.add("hidden")
     }, 3000)
     
-    tada.play()
+    tada.play(15)
     
+}
+
+function clickEffect(){
+    navigator.vibrate(15)
 }

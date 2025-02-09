@@ -45,11 +45,11 @@ h2.title2{
 .lembrete,
 .observacoes,
 .dados{
-    background-color: #414040;
+    background-color: #0d0e0d75;
     color: #e0e0e0;
     padding: 2rem;
     border-radius: 12px;
-    margin: 4rem 0;
+    margin: 2rem 0;
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.144);
 }
 
@@ -87,10 +87,11 @@ ul#lista-aulas{
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    margin: 0 0 6rem 0;
 }
 
 .aula{
-    background-color: #414040;
+    background-color: #0d0e0d75;
     color: #e0e0e0;
     padding: 1rem 2rem;
     border-radius: 12px;
@@ -114,8 +115,7 @@ ul#lista-aulas{
 }
 
 .aula.checked{
-    background-color: rgba(250, 255, 251, 0.514);
-    
+    background-color: #0d0e0d75;
 }
 
 .aula.checked .status{
