@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+:root{
+    font-size: 62.5%;
+    --bg: rgb(41, 40, 40);
+    --highlight: yellow;
+    --light-font: #fff
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: "Poppins", serif;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+main{
+    padding: 3rem 3rem;
+}
+
+h2.title2{
+    color: var(--light-font);
+    margin: 2rem 0;
+}
+
+/* Dados */
+
+.dados{
+    margin-top: 2rem;
+    min-height: 12rem;
+    /* background-color: var(--highlight); */
+    display: flex;
+    flex-direction: column;
+    color: rgb(248, 248, 248);
+    gap: 1rem;
+    ;
+}
+
+/* Lista de Aulas */
+
+.title-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.data{
+    background-color: #c5c4c4;
+    padding: .25rem 2rem;
+    border-radius: 6px;
+}
+
+
+ul#lista-aulas{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.aula{
+    background-color: rgb(252, 252, 252);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.aula .status{
+    padding: .14rem 1.4rem;
+    background-color: #c5c4c4;
+    border-radius: 6px;
+}
+
+.aula .wrapper{
+    display: flex;
+    gap: 2rem;
+}
+
+.aula.checked{
+    background-color: rgba(250, 255, 251, 0.514);
+    
+}
+
+.aula.checked .status{
+    background-color: #25df44;
+}
+
+/* statistics */
+
+.statistics{
+    min-height: 30vh;
+    /* background-color: var(--highlight); */
+}
+
+.progress-bar{
+    min-height: 1rem;
+    background-color: #ffffff5b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.progress{
+    min-height: 1rem;
+    width: 0%;
+    background-color: greenyellow;
+    transition: all .23s ease-in-out;
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Congratulations */
+.congratulations.hidden{
+    display: none;
+}
+
+.congratulations{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#confetes{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 9/16;
+    object-fit: cover;
+
+}
